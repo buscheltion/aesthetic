@@ -126,8 +126,10 @@ else{
     seconds+=" am"
 }
 hrs = today.getHours();
-if (hrs < 11)
-        greet = 'Good Morning Gabi  ';
+if (hrs < 5)
+        greet = 'Late Night Owl Gabi  ';
+    else if (hrs >= 5 && hrs <= 11)
+        greet = 'Good Morning Gabi ';
     else if (hrs >= 11 && hrs <= 14)
         greet = 'Hello Gabi ';
     else if (hrs >= 14 && hrs <= 17)
